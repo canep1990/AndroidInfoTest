@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF7543CC1D6853DD0002E61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7543CB1D6853DD0002E61D /* main.m */; };
+		EF7543CF1D6853DD0002E61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7543CE1D6853DD0002E61D /* AppDelegate.m */; };
+		EF7543D51D6853DD0002E61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7543D31D6853DD0002E61D /* Main.storyboard */; };
+		EF7543D71D6853DD0002E61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7543D61D6853DD0002E61D /* Assets.xcassets */; };
+		EF7543DA1D6853DD0002E61D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7543D81D6853DD0002E61D /* LaunchScreen.storyboard */; };
+		EFFBC1071D685E7400250CCE /* YVFixedURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1061D685E7400250CCE /* YVFixedURLSessionManager.m */; };
+		EFFBC10C1D685ED600250CCE /* YVURLSessionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC10B1D685ED600250CCE /* YVURLSessionOperation.m */; };
+		EFFBC10F1D685FAE00250CCE /* YVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC10E1D685FAE00250CCE /* YVBaseViewController.m */; };
+		EFFBC1131D685FBB00250CCE /* UIViewController+viewDelegateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1111D685FBB00250CCE /* UIViewController+viewDelegateAdditions.m */; };
+		EFFBC1161D68606A00250CCE /* YVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1151D68606A00250CCE /* YVBaseView.m */; };
+		EFFBC1191D6860D600250CCE /* YVAndroidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1181D6860D600250CCE /* YVAndroidModel.m */; };
+		EFFBC11C1D6861BE00250CCE /* NSDictionary+ContainsKey.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC11B1D6861BE00250CCE /* NSDictionary+ContainsKey.m */; };
+		EFFBC11F1D6891A100250CCE /* YVAndroidInfoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC11E1D6891A100250CCE /* YVAndroidInfoOperation.m */; };
+		EFFBC1221D6891EE00250CCE /* YVDownloadAndroidInfoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1211D6891EE00250CCE /* YVDownloadAndroidInfoOperation.m */; };
+		EFFBC1251D68920200250CCE /* YVParseAndroidInfoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1241D68920200250CCE /* YVParseAndroidInfoOperation.m */; };
+		EFFBC1281D68932100250CCE /* YVAndroidTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1271D68932100250CCE /* YVAndroidTableViewController.m */; };
+		EFFBC12B1D6893D900250CCE /* YVAndroidTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC12A1D6893D900250CCE /* YVAndroidTableView.m */; };
+		EFFBC1321D6894DD00250CCE /* YVAndroidTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1301D6894DD00250CCE /* YVAndroidTableCell.m */; };
+		EFFBC1331D6894DD00250CCE /* YVAndroidTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFBC1311D6894DD00250CCE /* YVAndroidTableCell.xib */; };
+		EFFBC1371D6896BA00250CCE /* YVAndroidCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1351D6896BA00250CCE /* YVAndroidCollectionCell.m */; };
+		EFFBC1381D6896BA00250CCE /* YVAndroidCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFBC1361D6896BA00250CCE /* YVAndroidCollectionCell.xib */; };
+		EFFBC13D1D68983800250CCE /* YVAndroidTableAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC13C1D68983800250CCE /* YVAndroidTableAdapter.m */; };
+		EFFBC1401D68984B00250CCE /* YVAndroidCollectionAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC13F1D68984B00250CCE /* YVAndroidCollectionAdapter.m */; };
+		EFFBC1431D689C5500250CCE /* YVAndroidSlideCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1421D689C5500250CCE /* YVAndroidSlideCollectionViewController.m */; };
+		EFFBC1461D689C7E00250CCE /* YVAndroidSlideCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1451D689C7E00250CCE /* YVAndroidSlideCollectionView.m */; };
+		EFFBC1491D69E49900250CCE /* YVBackgroundObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFBC1481D69E49900250CCE /* YVBackgroundObserver.m */; };
+		F25E53A7453CEE11DEAC2C15 /* libPods-AndroidInfoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C11412260CD7C816391BB1 /* libPods-AndroidInfoTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17C11412260CD7C816391BB1 /* libPods-AndroidInfoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AndroidInfoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D019B37378312FC505831798 /* Pods-AndroidInfoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndroidInfoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AndroidInfoTest/Pods-AndroidInfoTest.release.xcconfig"; sourceTree = "<group>"; };
+		EF7543C71D6853DD0002E61D /* AndroidInfoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidInfoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7543CB1D6853DD0002E61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF7543CD1D6853DD0002E61D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF7543CE1D6853DD0002E61D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF7543D41D6853DD0002E61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF7543D61D6853DD0002E61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7543D91D6853DD0002E61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF7543DB1D6853DD0002E61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFBC1051D685E7400250CCE /* YVFixedURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVFixedURLSessionManager.h; sourceTree = "<group>"; };
+		EFFBC1061D685E7400250CCE /* YVFixedURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVFixedURLSessionManager.m; sourceTree = "<group>"; };
+		EFFBC10A1D685ED600250CCE /* YVURLSessionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVURLSessionOperation.h; sourceTree = "<group>"; };
+		EFFBC10B1D685ED600250CCE /* YVURLSessionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVURLSessionOperation.m; sourceTree = "<group>"; };
+		EFFBC10D1D685FAE00250CCE /* YVBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVBaseViewController.h; sourceTree = "<group>"; };
+		EFFBC10E1D685FAE00250CCE /* YVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVBaseViewController.m; sourceTree = "<group>"; };
+		EFFBC1101D685FBB00250CCE /* UIViewController+viewDelegateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+viewDelegateAdditions.h"; sourceTree = "<group>"; };
+		EFFBC1111D685FBB00250CCE /* UIViewController+viewDelegateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+viewDelegateAdditions.m"; sourceTree = "<group>"; };
+		EFFBC1121D685FBB00250CCE /* YVViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVViewControllerDelegate.h; sourceTree = "<group>"; };
+		EFFBC1141D68606A00250CCE /* YVBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVBaseView.h; sourceTree = "<group>"; };
+		EFFBC1151D68606A00250CCE /* YVBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVBaseView.m; sourceTree = "<group>"; };
+		EFFBC1171D6860D600250CCE /* YVAndroidModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidModel.h; sourceTree = "<group>"; };
+		EFFBC1181D6860D600250CCE /* YVAndroidModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidModel.m; sourceTree = "<group>"; };
+		EFFBC11A1D6861BE00250CCE /* NSDictionary+ContainsKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ContainsKey.h"; sourceTree = "<group>"; };
+		EFFBC11B1D6861BE00250CCE /* NSDictionary+ContainsKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ContainsKey.m"; sourceTree = "<group>"; };
+		EFFBC11D1D6891A100250CCE /* YVAndroidInfoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidInfoOperation.h; sourceTree = "<group>"; };
+		EFFBC11E1D6891A100250CCE /* YVAndroidInfoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidInfoOperation.m; sourceTree = "<group>"; };
+		EFFBC1201D6891EE00250CCE /* YVDownloadAndroidInfoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVDownloadAndroidInfoOperation.h; sourceTree = "<group>"; };
+		EFFBC1211D6891EE00250CCE /* YVDownloadAndroidInfoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVDownloadAndroidInfoOperation.m; sourceTree = "<group>"; };
+		EFFBC1231D68920200250CCE /* YVParseAndroidInfoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVParseAndroidInfoOperation.h; sourceTree = "<group>"; };
+		EFFBC1241D68920200250CCE /* YVParseAndroidInfoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVParseAndroidInfoOperation.m; sourceTree = "<group>"; };
+		EFFBC1261D68932100250CCE /* YVAndroidTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidTableViewController.h; sourceTree = "<group>"; };
+		EFFBC1271D68932100250CCE /* YVAndroidTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidTableViewController.m; sourceTree = "<group>"; };
+		EFFBC1291D6893D900250CCE /* YVAndroidTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidTableView.h; sourceTree = "<group>"; };
+		EFFBC12A1D6893D900250CCE /* YVAndroidTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidTableView.m; sourceTree = "<group>"; };
+		EFFBC12F1D6894DD00250CCE /* YVAndroidTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidTableCell.h; sourceTree = "<group>"; };
+		EFFBC1301D6894DD00250CCE /* YVAndroidTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidTableCell.m; sourceTree = "<group>"; };
+		EFFBC1311D6894DD00250CCE /* YVAndroidTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVAndroidTableCell.xib; sourceTree = "<group>"; };
+		EFFBC1341D6896BA00250CCE /* YVAndroidCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidCollectionCell.h; sourceTree = "<group>"; };
+		EFFBC1351D6896BA00250CCE /* YVAndroidCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidCollectionCell.m; sourceTree = "<group>"; };
+		EFFBC1361D6896BA00250CCE /* YVAndroidCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVAndroidCollectionCell.xib; sourceTree = "<group>"; };
+		EFFBC13B1D68983800250CCE /* YVAndroidTableAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidTableAdapter.h; sourceTree = "<group>"; };
+		EFFBC13C1D68983800250CCE /* YVAndroidTableAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidTableAdapter.m; sourceTree = "<group>"; };
+		EFFBC13E1D68984B00250CCE /* YVAndroidCollectionAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidCollectionAdapter.h; sourceTree = "<group>"; };
+		EFFBC13F1D68984B00250CCE /* YVAndroidCollectionAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidCollectionAdapter.m; sourceTree = "<group>"; };
+		EFFBC1411D689C5500250CCE /* YVAndroidSlideCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidSlideCollectionViewController.h; sourceTree = "<group>"; };
+		EFFBC1421D689C5500250CCE /* YVAndroidSlideCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidSlideCollectionViewController.m; sourceTree = "<group>"; };
+		EFFBC1441D689C7E00250CCE /* YVAndroidSlideCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVAndroidSlideCollectionView.h; sourceTree = "<group>"; };
+		EFFBC1451D689C7E00250CCE /* YVAndroidSlideCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVAndroidSlideCollectionView.m; sourceTree = "<group>"; };
+		EFFBC1471D69E49900250CCE /* YVBackgroundObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVBackgroundObserver.h; sourceTree = "<group>"; };
+		EFFBC1481D69E49900250CCE /* YVBackgroundObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVBackgroundObserver.m; sourceTree = "<group>"; };
+		F45457F28B7F0729FE776DBF /* Pods-AndroidInfoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndroidInfoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AndroidInfoTest/Pods-AndroidInfoTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7543C41D6853DD0002E61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25E53A7453CEE11DEAC2C15 /* libPods-AndroidInfoTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF9432FBEB2AE898D7E02DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F45457F28B7F0729FE776DBF /* Pods-AndroidInfoTest.debug.xcconfig */,
+				D019B37378312FC505831798 /* Pods-AndroidInfoTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69A9F4AE0E79CAE70DD8CDF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C11412260CD7C816391BB1 /* libPods-AndroidInfoTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7543BE1D6853DD0002E61D = {
+			isa = PBXGroup;
+			children = (
+				EF7543C91D6853DD0002E61D /* AndroidInfoTest */,
+				EF7543C81D6853DD0002E61D /* Products */,
+				5DF9432FBEB2AE898D7E02DD /* Pods */,
+				69A9F4AE0E79CAE70DD8CDF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7543C81D6853DD0002E61D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7543C71D6853DD0002E61D /* AndroidInfoTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7543C91D6853DD0002E61D /* AndroidInfoTest */ = {
+			isa = PBXGroup;
+			children = (
+				EF7543E21D68542C0002E61D /* Classes */,
+				EF7543E11D6853F60002E61D /* AppDelegate/Resources */,
+				EF7543CA1D6853DD0002E61D /* Supporting Files */,
+			);
+			path = AndroidInfoTest;
+			sourceTree = "<group>";
+		};
+		EF7543CA1D6853DD0002E61D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7543CB1D6853DD0002E61D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7543E11D6853F60002E61D /* AppDelegate/Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF7543CD1D6853DD0002E61D /* AppDelegate.h */,
+				EF7543CE1D6853DD0002E61D /* AppDelegate.m */,
+				EF7543D31D6853DD0002E61D /* Main.storyboard */,
+				EF7543D61D6853DD0002E61D /* Assets.xcassets */,
+				EF7543D81D6853DD0002E61D /* LaunchScreen.storyboard */,
+				EF7543DB1D6853DD0002E61D /* Info.plist */,
+			);
+			name = AppDelegate/Resources;
+			sourceTree = "<group>";
+		};
+		EF7543E21D68542C0002E61D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1091D685E9000250CCE /* MVP */,
+				EFFBC1081D685E8900250CCE /* Categories */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EF7543E31D6854950002E61D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC12C1D68948B00250CCE /* Cells */,
+				EFFBC0FF1D685D2600250CCE /* PresenterViews */,
+				EFFBC0FB1D685ABC00250CCE /* Adapters */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EF7543E41D68549C0002E61D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC0FE1D685D1B00250CCE /* Presenters */,
+				EFFBC0FD1D685BDB00250CCE /* BasePresenter */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		EF7543E51D6854A20002E61D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1031D685D8F00250CCE /* Networking */,
+				EFFBC1021D685D8900250CCE /* Models */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EFFBC0FB1D685ABC00250CCE /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC13A1D68981800250CCE /* CollectionViewAdapters */,
+				EFFBC1391D68981100250CCE /* TableViewAdapters */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		EFFBC0FD1D685BDB00250CCE /* BasePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1121D685FBB00250CCE /* YVViewControllerDelegate.h */,
+				EFFBC10D1D685FAE00250CCE /* YVBaseViewController.h */,
+				EFFBC10E1D685FAE00250CCE /* YVBaseViewController.m */,
+			);
+			name = BasePresenter;
+			sourceTree = "<group>";
+		};
+		EFFBC0FE1D685D1B00250CCE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1261D68932100250CCE /* YVAndroidTableViewController.h */,
+				EFFBC1271D68932100250CCE /* YVAndroidTableViewController.m */,
+				EFFBC1411D689C5500250CCE /* YVAndroidSlideCollectionViewController.h */,
+				EFFBC1421D689C5500250CCE /* YVAndroidSlideCollectionViewController.m */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		EFFBC0FF1D685D2600250CCE /* PresenterViews */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1001D685D2F00250CCE /* Base */,
+				EFFBC1011D685D3F00250CCE /* Views */,
+			);
+			name = PresenterViews;
+			sourceTree = "<group>";
+		};
+		EFFBC1001D685D2F00250CCE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1141D68606A00250CCE /* YVBaseView.h */,
+				EFFBC1151D68606A00250CCE /* YVBaseView.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		EFFBC1011D685D3F00250CCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1291D6893D900250CCE /* YVAndroidTableView.h */,
+				EFFBC12A1D6893D900250CCE /* YVAndroidTableView.m */,
+				EFFBC1441D689C7E00250CCE /* YVAndroidSlideCollectionView.h */,
+				EFFBC1451D689C7E00250CCE /* YVAndroidSlideCollectionView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EFFBC1021D685D8900250CCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1171D6860D600250CCE /* YVAndroidModel.h */,
+				EFFBC1181D6860D600250CCE /* YVAndroidModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EFFBC1031D685D8F00250CCE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1041D685D9900250CCE /* FixedAfNetworking/FixedSessionOperation */,
+				EFFBC11D1D6891A100250CCE /* YVAndroidInfoOperation.h */,
+				EFFBC11E1D6891A100250CCE /* YVAndroidInfoOperation.m */,
+				EFFBC1201D6891EE00250CCE /* YVDownloadAndroidInfoOperation.h */,
+				EFFBC1211D6891EE00250CCE /* YVDownloadAndroidInfoOperation.m */,
+				EFFBC1231D68920200250CCE /* YVParseAndroidInfoOperation.h */,
+				EFFBC1241D68920200250CCE /* YVParseAndroidInfoOperation.m */,
+				EFFBC1471D69E49900250CCE /* YVBackgroundObserver.h */,
+				EFFBC1481D69E49900250CCE /* YVBackgroundObserver.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		EFFBC1041D685D9900250CCE /* FixedAfNetworking/FixedSessionOperation */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1051D685E7400250CCE /* YVFixedURLSessionManager.h */,
+				EFFBC1061D685E7400250CCE /* YVFixedURLSessionManager.m */,
+				EFFBC10A1D685ED600250CCE /* YVURLSessionOperation.h */,
+				EFFBC10B1D685ED600250CCE /* YVURLSessionOperation.m */,
+			);
+			name = FixedAfNetworking/FixedSessionOperation;
+			sourceTree = "<group>";
+		};
+		EFFBC1081D685E8900250CCE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC11A1D6861BE00250CCE /* NSDictionary+ContainsKey.h */,
+				EFFBC11B1D6861BE00250CCE /* NSDictionary+ContainsKey.m */,
+				EFFBC1101D685FBB00250CCE /* UIViewController+viewDelegateAdditions.h */,
+				EFFBC1111D685FBB00250CCE /* UIViewController+viewDelegateAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		EFFBC1091D685E9000250CCE /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				EF7543E51D6854A20002E61D /* Model */,
+				EF7543E41D68549C0002E61D /* Presenter */,
+				EF7543E31D6854950002E61D /* View */,
+			);
+			name = MVP;
+			sourceTree = "<group>";
+		};
+		EFFBC12C1D68948B00250CCE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC12E1D6894A400250CCE /* CollectionViewCells */,
+				EFFBC12D1D68949200250CCE /* TableViewCells */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EFFBC12D1D68949200250CCE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC12F1D6894DD00250CCE /* YVAndroidTableCell.h */,
+				EFFBC1301D6894DD00250CCE /* YVAndroidTableCell.m */,
+				EFFBC1311D6894DD00250CCE /* YVAndroidTableCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		EFFBC12E1D6894A400250CCE /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC1341D6896BA00250CCE /* YVAndroidCollectionCell.h */,
+				EFFBC1351D6896BA00250CCE /* YVAndroidCollectionCell.m */,
+				EFFBC1361D6896BA00250CCE /* YVAndroidCollectionCell.xib */,
+			);
+			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		EFFBC1391D68981100250CCE /* TableViewAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC13B1D68983800250CCE /* YVAndroidTableAdapter.h */,
+				EFFBC13C1D68983800250CCE /* YVAndroidTableAdapter.m */,
+			);
+			name = TableViewAdapters;
+			sourceTree = "<group>";
+		};
+		EFFBC13A1D68981800250CCE /* CollectionViewAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				EFFBC13E1D68984B00250CCE /* YVAndroidCollectionAdapter.h */,
+				EFFBC13F1D68984B00250CCE /* YVAndroidCollectionAdapter.m */,
+			);
+			name = CollectionViewAdapters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7543C61D6853DD0002E61D /* AndroidInfoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7543DE1D6853DD0002E61D /* Build configuration list for PBXNativeTarget "AndroidInfoTest" */;
+			buildPhases = (
+				4AD597A1C0FEC4792CD2247B /* 📦 Check Pods Manifest.lock */,
+				EF7543C31D6853DD0002E61D /* Sources */,
+				EF7543C41D6853DD0002E61D /* Frameworks */,
+				EF7543C51D6853DD0002E61D /* Resources */,
+				357F06BDA99F9DA14604E20B /* 📦 Embed Pods Frameworks */,
+				DABBF0787B883F522B1B60A0 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndroidInfoTest;
+			productName = AndroidInfoTest;
+			productReference = EF7543C71D6853DD0002E61D /* AndroidInfoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7543BF1D6853DD0002E61D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Юрий Воскресенский";
+				TargetAttributes = {
+					EF7543C61D6853DD0002E61D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EF7543C21D6853DD0002E61D /* Build configuration list for PBXProject "AndroidInfoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7543BE1D6853DD0002E61D;
+			productRefGroup = EF7543C81D6853DD0002E61D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7543C61D6853DD0002E61D /* AndroidInfoTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7543C51D6853DD0002E61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7543DA1D6853DD0002E61D /* LaunchScreen.storyboard in Resources */,
+				EF7543D71D6853DD0002E61D /* Assets.xcassets in Resources */,
+				EFFBC1381D6896BA00250CCE /* YVAndroidCollectionCell.xib in Resources */,
+				EF7543D51D6853DD0002E61D /* Main.storyboard in Resources */,
+				EFFBC1331D6894DD00250CCE /* YVAndroidTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		357F06BDA99F9DA14604E20B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AndroidInfoTest/Pods-AndroidInfoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD597A1C0FEC4792CD2247B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DABBF0787B883F522B1B60A0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AndroidInfoTest/Pods-AndroidInfoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7543C31D6853DD0002E61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFBC1371D6896BA00250CCE /* YVAndroidCollectionCell.m in Sources */,
+				EFFBC1431D689C5500250CCE /* YVAndroidSlideCollectionViewController.m in Sources */,
+				EFFBC1251D68920200250CCE /* YVParseAndroidInfoOperation.m in Sources */,
+				EFFBC1131D685FBB00250CCE /* UIViewController+viewDelegateAdditions.m in Sources */,
+				EFFBC11C1D6861BE00250CCE /* NSDictionary+ContainsKey.m in Sources */,
+				EFFBC10F1D685FAE00250CCE /* YVBaseViewController.m in Sources */,
+				EFFBC1491D69E49900250CCE /* YVBackgroundObserver.m in Sources */,
+				EFFBC12B1D6893D900250CCE /* YVAndroidTableView.m in Sources */,
+				EF7543CF1D6853DD0002E61D /* AppDelegate.m in Sources */,
+				EFFBC1221D6891EE00250CCE /* YVDownloadAndroidInfoOperation.m in Sources */,
+				EFFBC1461D689C7E00250CCE /* YVAndroidSlideCollectionView.m in Sources */,
+				EFFBC1321D6894DD00250CCE /* YVAndroidTableCell.m in Sources */,
+				EFFBC11F1D6891A100250CCE /* YVAndroidInfoOperation.m in Sources */,
+				EF7543CC1D6853DD0002E61D /* main.m in Sources */,
+				EFFBC1191D6860D600250CCE /* YVAndroidModel.m in Sources */,
+				EFFBC1281D68932100250CCE /* YVAndroidTableViewController.m in Sources */,
+				EFFBC13D1D68983800250CCE /* YVAndroidTableAdapter.m in Sources */,
+				EFFBC1161D68606A00250CCE /* YVBaseView.m in Sources */,
+				EFFBC1071D685E7400250CCE /* YVFixedURLSessionManager.m in Sources */,
+				EFFBC1401D68984B00250CCE /* YVAndroidCollectionAdapter.m in Sources */,
+				EFFBC10C1D685ED600250CCE /* YVURLSessionOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF7543D31D6853DD0002E61D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7543D41D6853DD0002E61D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7543D81D6853DD0002E61D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7543D91D6853DD0002E61D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF7543DC1D6853DD0002E61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF7543DD1D6853DD0002E61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7543DF1D6853DD0002E61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45457F28B7F0729FE776DBF /* Pods-AndroidInfoTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AndroidInfoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.AndroidInfoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF7543E01D6853DD0002E61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D019B37378312FC505831798 /* Pods-AndroidInfoTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AndroidInfoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.AndroidInfoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7543C21D6853DD0002E61D /* Build configuration list for PBXProject "AndroidInfoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7543DC1D6853DD0002E61D /* Debug */,
+				EF7543DD1D6853DD0002E61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7543DE1D6853DD0002E61D /* Build configuration list for PBXNativeTarget "AndroidInfoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7543DF1D6853DD0002E61D /* Debug */,
+				EF7543E01D6853DD0002E61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7543BF1D6853DD0002E61D /* Project object */;
+}
