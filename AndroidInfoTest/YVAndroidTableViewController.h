@@ -11,8 +11,6 @@
 
 @protocol YVAndroidTableViewControllerDelegate <YVViewControllerDelegate>
 
-//- (void)androidTableViewControllerDidStartLoadingData;
-
 - (void)configureAndroidTableViewWithAndroidModelArray:(NSArray <YVAndroidModel *> *)androidModels;
 
 @end

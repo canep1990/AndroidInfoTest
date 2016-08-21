@@ -15,6 +15,7 @@
 - (void)androidCollectionAdapter:(YVAndroidCollectionAdapter *)adapter didChangePageInfo:(NSString *)pageInfo;
 @end
 
+/// Adapter for collection view
 @interface YVAndroidCollectionAdapter : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (copy, nonatomic) NSArray <YVAndroidModel *> *modelsArray;

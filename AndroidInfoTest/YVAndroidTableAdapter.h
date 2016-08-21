@@ -17,6 +17,7 @@
 
 @end
 
+/// Adapter for table view
 @interface YVAndroidTableAdapter : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) id <YVAndroidTableAdapterDelegate> delegate;

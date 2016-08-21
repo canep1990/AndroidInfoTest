@@ -15,6 +15,7 @@
 - (void)androidSlideCollectionView:(YVAndroidSlideCollectionView *)view didChangePageInfo:(NSString *)pageInfo;
 @end
 
+/// View for displaying android models in sliding views
 @interface YVAndroidSlideCollectionView : YVBaseView
 
 @end

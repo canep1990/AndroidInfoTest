@@ -20,6 +20,7 @@
 
 @end
 
+/// View for displaying android models in table
 @interface YVAndroidTableView : YVBaseView
 
 @end

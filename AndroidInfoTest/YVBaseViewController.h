@@ -10,6 +10,7 @@
 #import "UIViewController+viewDelegateAdditions.h"
 #import <INSOperationsKit/INSOperationsKit.h>
 
+/// Base presenter with common functionality
 @interface YVBaseViewController : UIViewController <INSOperationObserverProtocol>
 
 - (void)operationDidFinishWithSuccess:(__kindof NSOperation * _Nonnull)operation;
